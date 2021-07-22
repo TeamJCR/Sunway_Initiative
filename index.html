@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html><head><meta name="GCD" content="YTk3ODQ3ZWZhN2I4NzZmMzBkNTEwYjJl35f87dc38149f005d263d17727757f6b"/>
+  <meta charset="utf-8">
+  <title>Sunway Initiative</title>
+  <meta name="viewport" content="width=device-width,initial-scale=0.6">
+  <meta name="generator" content="Google Web Designer 11.0.2.0415">
+  <style type="text/css">@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;700&display=swap");
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    font: inherit;
+    vertical-align: baseline;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol,
+ul {
+    list-style: none;
+}
+blockquote,
+q {
+    quotes: none;
+}
+blockquote::before,
+blockquote::after,
+q::before,
+q::after {
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0px;
+}
+html {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    scroll-padding: 100px;
+}
+*,
+::before,
+::after {
+    box-sizing: inherit;
+}
+body,
+* {
+    font-family: Quicksand, sands-serif;
+}
+* {
+    --root-padding: 3rem;
+    --root-radius: 2rem;
+    --root-max-width: 45rem;
+}
+body {
+    background-color: rgb(236, 236, 236);
+}
+h1 {
+    font-weight: 700;
+    font-size: 4rem;
+}
+h2 {
+    margin-bottom: 1.5rem;
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+p {
+    line-height: 1.6rem;
+    font-weight: 500;
+}
+b {
+    font-weight: 700;
+}
+button.beautify {
+    border-radius: var(--root-radius);
+    padding: calc(var(--root-padding) / 5) var(--root-padding);
+    border: 0px;
+    font-weight: 700;
+    transition: padding 250ms ease-in-out 0s;
+    -webkit-transition: padding 250ms ease-in-out 0s;
+    -moz-transition: padding 250ms ease-in-out 0s;
+}
+button.beautify:hover {
+    padding: calc(var(--root-padding) / 5) calc(var(--root-padding) + 1rem);
+    cursor: pointer;
+}
+button.circular {
+    border-radius: 50%;
+    border: 0px;
+    font-weight: 700;
+    transition: all 250ms ease-in-out 0s;
+    -webkit-transition: all 250ms ease-in-out 0s;
+    -moz-transition: all 250ms ease-in-out 0s;
+    width: 50px;
+    height: 50px;
+}
+button.floating {
+    box-shadow: rgba(80, 80, 80, 0.5) 0px 10px 8px;
+}
+button.circular:hover {
+    width: 65px;
+    height: 65px;
+    cursor: pointer;
+}
+a.no-deco {
+    text-decoration: none;
+    color: inherit;
+}
+figure {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.slide {
+    height: 110vh;
+    min-height: 40rem;
+    transition: background-color 250ms cubic-bezier(0.165, 0.84, 0.44, 1) 0s;
+    -webkit-transition: background-color 250ms cubic-bezier(0.165, 0.84, 0.44, 1) 0s;
+    -moz-transition: background-color 250ms cubic-bezier(0.165, 0.84, 0.44, 1) 0s;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+.slide.bright-yellow {
+    background-color: rgb(255, 255, 183);
+}
+.slide.pink-orange {
+    background-color: rgb(242, 130, 102);
+}
+.slide.bright-pink-orange {
+    background-color: rgb(234, 172, 139);
+}
+.slide.skin-orange {
+    background-color: rgb(255, 190, 111);
+}
+.slide.light-green {
+    background-color: rgb(205, 217, 147);
+}
+.slide.light-sky-blue {
+    background-color: rgb(202, 240, 248);
+}
+.slide.mint {
+    background-color: rgb(216, 243, 220);
+}
+.slide-content {
+    position: absolute;
+    height: 90vh;
+    min-height: 40rem;
+    width: 100%;
+    max-width: 80rem;
+    display: flex;
+    flex-direction: column;
+    padding: var(--root-padding);
+}
+.slider {
+    flex: 9 1 0%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1;
+}
+.dot {
+    flex: 1 1 0%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+}
+.dot-child {
+    margin: 1rem;
+    border-radius: 1rem;
+    height: 0.7rem;
+    width: 0.7rem;
+    background-color: rgba(128, 128, 128, 0.5);
+    cursor: pointer;
+    transition: all 250ms cubic-bezier(0.165, 0.84, 0.44, 1) 0s;
+    -webkit-transition: all 250ms cubic-bezier(0.165, 0.84, 0.44, 1) 0s;
+    -moz-transition: all 250ms cubic-bezier(0.165, 0.84, 0.44, 1) 0s;
+}
+.dot-child.current {
+    background-color: rgba(0, 0, 0, 0.5);
+    cursor: auto;
+    width: 1.5rem;
+}
+.main {
+    height: 100%;
+    margin: 0px auto;
+}
+.main > * {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    transition: all 250ms ease-in-out 0s;
+    -webkit-transition: all 250ms ease-in-out 0s;
+    -moz-transition: all 250ms ease-in-out 0s;
+}
+.main > * > .central {
+    flex: 4 1 0%;
+}
+.main > * > .desc {
+    flex: 1 1 0%;
+}
+.central,
+.desc {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hide {
+    opacity: 0;
+    transform: translateY(1rem);
+    -webkit-transform: translateY(1rem);
+    -moz-transform: translateY(1rem);
+}
+.none {
+    display: none;
+}
+img.logo {
+    width: 25rem;
+    object-fit: contain;
+}
+img.clickable {
+    cursor: pointer;
+    transform: translateY(0px);
+    -webkit-transform: translateY(0px);
+    -moz-transform: translateY(0px);
+    transition: all 250ms ease-in-out 0s;
+    -webkit-transition: all 250ms ease-in-out 0s;
+    -moz-transition: all 250ms ease-in-out 0s;
+}
+img.clickable:hover {
+    filter: drop-shadow(rgba(83, 83, 83, 0.5) 0px 10px 8px);
+    -webkit-filter: drop-shadow(rgba(83, 83, 83, 0.5) 0px 10px 8px);
+    -moz-filter: drop-shadow(rgba(83, 83, 83, 0.5) 0px 10px 8px);
+    transform: translateY(-10px);
+    -webkit-transform: translateY(-10px);
+    -moz-transform: translateY(-10px);
+}
+.slide-deco {
+    height: inherit;
+    width: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    overflow: hidden;
+}
+.slide-deco > * > * {
+    transition: all 750ms ease-in-out 0s;
+    -webkit-transition: all 750ms ease-in-out 0s;
+    -moz-transition: all 750ms ease-in-out 0s;
+    --postion-y: -40rem;
+}
+.fg {
+    position: absolute;
+    bottom: calc(var(--postion-y));
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    opacity: 1;
+}
+.mg {
+    position: absolute;
+    bottom: calc(var(--postion-y) + 5rem);
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    opacity: 1;
+}
+.bg {
+    position: absolute;
+    bottom: calc(var(--postion-y) + 10rem);
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    opacity: 1;
+}
+.hide-deco > * {
+    bottom: -130%;
+    opacity: 0;
+}
+@media not all {
+    .neglectable {
+        display: none;
+    }
+}
+.detail {
+    max-width: var(--root-max-width);
+    margin: 0px auto;
+    background-color: white;
+    border-radius: var(--root-radius);
+    padding: var(--root-padding);
+    position: relative;
+    top: -10vh;
+    min-height: 50rem;
+    box-shadow: rgba(90, 90, 90, 0.6) 0px 0px 8px;
+}
+img.detail-logo {
+    display: block;
+    width: 20rem;
+    object-fit: contain;
+    margin: auto;
+}
+img.ext {
+    height: 10rem;
+    object-fit: contain;
+}
+div.img-station {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+figcaption {
+    font-size: small;
+}
+#food-cpr-detail button {
+    background-color: rgb(152, 18, 31);
+    color: white;
+}
+#milo-detail button {
+    background-color: rgb(106, 153, 78);
+    color: white;
+}
+span.space {
+    display: block;
+    height: 4rem;
+}
+span.hl {
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: rgb(187, 178, 178);
+}
+.signature {
+    display: block;
+    text-align: center;
+    padding: calc(var(--root-padding) / 4);
+    color: rgb(192, 189, 185);
+}</style>
+</head>
+
+<body class="htmlNoPages">
+  <div id="js-slide" class="slide">
+    <section class="slide-deco">
+      <div id="js-deco-init">
+        <img src="INIT_BG.png" alt="" class="bg">
+        <img src="INIT_MG.png" alt="" class="mg">
+        <img src="INIT_FG.png" alt="" class="fg">
+      </div>
+      <div id="js-deco-food-cpr" class="hide-deco">
+        <img src="FCPR_BG.png" alt="" class="bg">
+        <img src="FCPR_MG.png" alt="" class="mg">
+        <img src="FCPR_FG.png" alt="" class="fg">
+      </div>
+      <div id="js-deco-msc" class="hide-deco">
+        <img src="MSC_BG.png" alt="" class="bg">
+        <img src="MSC_MG.png" alt="" class="mg">
+        <img src="MSC_FG.png" alt="" class="fg">
+      </div>
+      <div id="js-deco-rhwb" class="hide-deco">
+        <img src="RHWB_BG.png" alt="" class="bg">
+        <img src="RHWB_MG.png" alt="" class="mg">
+        <img src="RHWB_FG.png" alt="" class="fg">
+      </div>
+      <div id="js-deco-rbra" class="hide-deco">
+        <img src="BRA_BG.png" alt="" class="bg">
+        <img src="BRA_MG.png" alt="" class="mg">
+        <img src="BRA_FG.png" alt="" class="fg">
+      </div>
+      <div id="js-deco-spr" class="hide-deco">
+        <img src="SPR_BG.png" alt="" class="bg">
+        <img src="SPR_MG.png" alt="" class="mg">
+        <img src="SPR_FG.png" alt="" class="fg">
+      </div>
+      <div id="js-deco-milo" class="hide-deco">
+        <img src="MILO_BG.png" alt="" class="bg">
+        <img src="MILO_MG.png" alt="" class="mg">
+        <img src="MILO_FG.png" alt="" class="fg">
+      </div>
+    </section>
+    <section class="slide-content">
+      <div class="slider">
+        <button id="js-prev" class="circular neglectable floating">&lt;</button>
+        <div class="main">
+          <section id="js-init" data-bg-color="bright-yellow">
+            <div class="central">
+              <img src="INIT_LOGO.png" alt="INIT_LOGO" class="logo clickable" onclick="(()=>{location.href = '#init-detail'})()">
+            </div>
+            <div class="desc">SWIPE LEFT/RIGHT | PRESS DOTS BELOW</div>
+          </section>
+          <section id="js-food-cpr" class="hide none" data-bg-color="skin-orange">
+            <div class="central">
+              <img src="FCPR_LOGO.png" class="logo clickable" alt="Food CPR Logo" onclick="(()=>{location.href = '#food-cpr-detail'})()">
+            </div>
+            <div class="desc">CONVERT WASTE TO LIFE 🌱 | FOR RESPONSIBLE CONSUMPTION AND PRODUCTION</div>
+          </section>
+          <section id="js-msc" class="hide none" data-bg-color="light-sky-blue">
+            <div class="central">
+              <img src="MSC_LOGO.png" class="logo clickable" alt="Metal Straw Campaign logo" onclick="(()=>{location.href = '#msc-detail'})()">
+            </div>
+            <div class="desc">REDEEM YOUR STRAW NOW | FOR LIVE BELOW WATER</div>
+          </section>
+          <section id="js-rhwb" class="hide none" data-bg-color="bright-pink-orange">
+            <div class="central">
+              <img src="RHWB_LOGO.png" class="logo clickable" alt="run happy with brooks logo" onclick="(()=>{location.href = '#rhwb-detail'})()">
+            </div>
+            <div class="desc">YOUR SHOES ➡ HELP PEOPLE | FOR NO POVERTY</div>
+          </section>
+          <section id="js-rbra" class="hide none" data-bg-color="pink-orange">
+            <div class="central">
+              <img src="BRA_LOGO.png" class="logo clickable" alt="recycle bra logo" onclick="(()=>{location.href = '#rbra-detail'})()">
+            </div>
+            <div class="desc">UNWANTED BRA ➡ GREEN ENERGY | FOR AFFORTABLE AND CLEAN ENERGY ⚡</div>
+          </section>
+          <section id="js-spr" class="hide none" data-bg-color="mint">
+            <div class="central">
+              <img src="SPR_LOGO.png" class="logo clickable" alt="recycle bottles logo" onclick="(()=>{location.href = '#spr-detail'})()">
+            </div>
+            <div class="desc">RECYCLE ♻ SPRITZER | FOR RESPONSIBLE CONSUMPTION AND PRODUCTION</div>
+          </section>
+          <section id="js-milo" class="hide none" data-bg-color="light-green">
+            <div class="central">
+              <img src="MILO_LOGO.png" class="logo clickable" alt="recycle carton logo" onclick="(()=>{location.href = '#milo-detail'})()">
+            </div>
+            <div class="desc">CARTON 🧃 ➡ ROOFING TILES | FOR NO POVERTY</div>
+          </section>
+        </div>
+        <button id="js-next" class="circular neglectable floating">&gt;</button>
+      </div>
+      <div id="js-dot" class="dot"></div>
+    </section>
+  </div>
+  <section class="detail">
+    <div id="init-detail">
+      <img src="INIT_LOGO.png" alt="Sunway Initiative Logo" class="detail-logo"> <span class="space"></span>
+      <h2>What is SUNWAY INITIATIVE?</h2>
+      <p>To achieve <a href="https://sdgs.un.org/goals">Standard Development Goals (SDG)</a>, we proudly introduce SUNWAY INITIATIVES. With the help of publics, we can create a better future for the younger generation.</p>
+    </div><span class="space"></span> <span class="hl"></span> <span class="space"></span>
+    <div id="food-cpr-detail">
+      <img src="FCPR_LOGO.png" alt="FOOD CPR LOGO" class="detail-logo"> <span class="space"></span>
+      <h2>Why Food CPR?</h2>
+      <p>👩‍🌾👨‍🌾👩‍🌾 Bring home a bag of compost from our Food CPR Station for gardening gard or planting purposes! 👨‍🌾👩‍🌾👨‍🌾</p><span class="space"></span>
+      <p>Did you know? Research shows that Malaysians contribute to more than <b>16,000 tonnes of food waste daily</b>! To deal with this massive problem, we turn these piles of food waste to <b>nutritious compost</b> (for plant, of course).</p><span class="space"></span>
+      <div class="img-station">
+        <figure>
+          <img src="FCPR_EXT.png" alt="" class="ext">
+          <figcaption>Food CPR station</figcaption>
+        </figure>
+      </div><span class="space"></span>
+      <a href="https://www.sunwaypyramid.com/foodcpr" target="_blank" rel="noopener noreferrer">
+        <button class="beautify">To official website &gt;</button>
+      </a>
+    </div><span class="space"></span> <span class="hl"></span> <span class="space"></span>
+    <div id="msc-detail">
+      <img src="MSC_LOGO.png" alt="Metal straw campaign" class="detail-logo"> <span class="space"></span>
+      <h2>REDEEM YOUR METAL STRAW NOW!!</h2>
+      <p>Plastic is not going away. Even if we throw it into the sea, it will only become smaller pieces of disastrous plastics, called microplastics. In 2017, Malaysian use up about 31 million plastic straws EVERY SINGLE DAY.</p><span class="space"></span>
+      <p>Metal straw is a perfect substitute for plastic straw to combat plastic waste. At SUNWAY Malls, Shoppers simply need to spend RM100 in two receipts to be eligible to redeem their personal metal straws from the concierge counters of each mall.</p>
+      <span class="space"></span>
+      <p>The metal straws can be redeemed at Sunway Pyramid, Sunway Velocity Mall, Sunway Putra Mall and Sunway Carnival Mall.</p><span class="space"></span>
+      <div class="img-station">
+        <figure>
+          <img src="MSC_EXT.png" alt="" class="ext">
+          <figcaption>Drink with metal straw</figcaption>
+        </figure>
+      </div>
+    </div><span class="space"></span> <span class="hl"></span> <span class="space"></span>
+    <div id="rhwb-detail">
+      <img src="RHWB_LOGO.png" alt="#RUNHAPPY WITH BROOKS logo" class="detail-logo"> <span class="space"></span>
+      <h2>👞👟👡 Have some old shoes lying around? 👞👟👡</h2>
+      <p>Recycle your shoes for someone in need by simply depositing your used shoes into the recycle bin ♻. Snap a photo 📷 and flash to Brooks’ friendly retail crew (F1.100B) to enjoy 25% off your next purchase!</p>
+    </div><span class="space"></span> <span class="hl"></span> <span class="space"></span>
+    <div id="rbra-detail">
+      <img src="BRA_LOGO.png" alt="Bra recycling with Wacoal" class="detail-logo"> <span class="space"></span>
+      <h2>Claim your reward 🎁</h2>
+      <p>1. Drop your bra (packed in a "Recycle Bag") into the bin</p>
+      <p>2. Snap a picture or video</p>
+      <p>3. Share it on social media with #WacoalBraRecycling</p>
+      <p>4. Flash your post to the friendly staff at Wacoal Boutique (G1.79)</p>
+      <p>5. Claim you <b>FREE GIFT AND RM20 VOUCHER</b> as token of appreciation</p><span class="space"></span>
+      <p>Your old bras will be processed into an environmentally-friendly fuel!</p><span class="space"></span>
+      <div class="img-station">
+        <figure>
+          <img src="BRA_EXT.png" alt="" class="ext">
+          <figcaption>Figure of a recycle bag</figcaption>
+        </figure>
+      </div>
+    </div><span class="space"></span> <span class="hl"></span> <span class="space"></span>
+    <div id="spr-detail">
+      <img src="SPR_LOGO.png" alt="Drink &amp; Recycle With Spritzer logo" class="detail-logo"> <span class="space"></span>
+      <p>Impatience with empty bottles and aluminium can in your hand while visiting around? Pay a visit to our "Drink &amp; Recycle with Spritzer" machine and drop in any of them to grant them a new soul and free your hand within 3 steps!</p><span class="space"></span>
+      <h2>3 STEPS TO RECYCLE:</h2>
+      <p>1. Click "Start" on the screen</p>
+      <p>2. Drop in any empty plastic bottles or aluminium cans</p>
+      <p>3. Click "Done"</p>
+    </div><span class="space"></span> <span class="hl"></span> <span class="space"></span>
+    <div id="milo-detail">
+      <img src="MILO_LOGO.png" alt="Saving the Earth, One Pack at A Time with Milo" class="detail-logo"> <span class="space"></span>
+      <h2>Did you know? Every time you recycle a drink pack, you help create roofing tiles used to build homes in need.</h2>
+      <p>The CAREton™ Project by MILO® UHT and Tetra Pack has helped to transform used beverage cartons to build over 150 homes for the Orange Asli Community!</p>
+      <p>Simply push the straw in, flip, flap and flatten the pack, and drop it into the CAREton™ bin at B1 Blue Zone!</p><span class="space"></span>
+      <div class="img-station">
+        <figure>
+          <img src="MILO_EXT.png" alt="" class="ext">
+          <figcaption>CAREton™ Project recycling station</figcaption>
+        </figure>
+      </div><span class="space"></span>
+      <a href="https://www.milo.com.my/the-milo-careton-project" target="_blank" rel="noopener noreferrer">
+        <button class="beautify">Check out CAREton™ project &gt;</button>
+      </a>
+    </div>
+  </section><span class="signature">Create with 💕 by Team JCR</span>
+  <script defer="defer">(()=>{"use strict";var t=function(t,n){for(var e=t;e<0;)e+=n;for(;e>n-1;)e-=n;return e},n=function(t){return[document.getElementById("js-"+t),document.getElementById("js-deco-"+t)]},e=[n("init"),n("food-cpr"),n("msc"),n("rhwb"),n("rbra"),n("spr"),n("milo")],i={current:0,set:function(t){var n=this;this.onChangeState.forEach((function(e){e(n.current,t)})),this.current=t},onChangeState:[]},c=function(t,n){void 0===n&&(n=function(){}),t.classList.add("hide"),t.addEventListener("transitionend",(function(){t.classList.add("none"),n()}),{once:!0})},o=function(t,n){void 0===n&&(n=function(){}),t.classList.remove("none"),setTimeout((function(){t.classList.remove("hide"),t.addEventListener("transitionend",(function(){n()}),{once:!0})}),20)},s=document.getElementById("js-slide"),r=function(t){return e[t][0].dataset.bgColor};s.classList.add(r(0)),i.onChangeState.push((function(t,n){s.classList.remove(r(t)),s.classList.add(r(n))})),i.onChangeState.push((function(t,n){e[t][1].classList.add("hide-deco"),e[n][1].classList.remove("hide-deco")}));for(var u=document.getElementById("js-dot"),d=[],a=function(t){var n=function(){var t=document.createElement("span");return t.classList.add("dot-child"),t}();n.addEventListener("click",(function s(){i.current!==t&&(n.removeEventListener("click",s),c(e[i.current][0],(function(){i.set(t),o(e[t][0],(function(){n.addEventListener("click",s)}))})))})),u.appendChild(n),d.push(n),0===t&&n.classList.add("current")},l=0;l<e.length;l++)a(l);i.onChangeState.push((function(t,n){d[t].classList.remove("current"),d[n].classList.add("current")}));var f=document.getElementById("js-prev"),h=document.getElementById("js-next");function v(n,s){return function r(){n.removeEventListener("click",r),c(e[i.current][0],(function(){var c=t(i.current+s,e.length);i.set(c),o(e[c][0],(function(){n.addEventListener("click",r)}))}))}}function m(n){c(e[i.current][0],(function(){var c=t(i.current+n,e.length);i.set(c),o(e[c][0])}))}f.addEventListener("click",v(f,-1)),h.addEventListener("click",v(h,1)),new(function(){function t(t,n,e){void 0===n&&(n=function(){}),void 0===e&&(e=500),this.isInCooldown=!1,this.x=null,this.y=null,this.target=t,this.cb=n,this.cooldown=e}return t.prototype.setCallback=function(t){this.cb=t},t.prototype.startListen=function(){var t=this;this.target.addEventListener("touchstart",(function(n){if(!t.isInCooldown){t.isInCooldown=!0,setTimeout((function(){return t.isInCooldown=!1}),t.cooldown);var e=n.touches[0];t.x=e.clientX,t.y=e.clientY}}),!1),this.target.addEventListener("touchmove",(function(n){if(null!==t.x&&null!==t.y){var e=n.touches[0].clientX,i=n.touches[0].clientY,c=t.x-e,o=t.y-i;Math.abs(c)>Math.abs(o)?c>0?t.cb("Left"):t.cb("Right"):o>0?t.cb("Up"):t.cb("Down"),t.x=null,t.y=null}}),!1)},t}())(document.getElementById("js-slide"),(function(t){"Left"===t?m(1):"Right"===t&&m(-1)})).startListen()})();</script>
+
+
+</body></html>
